@@ -80,7 +80,7 @@
       2. General - Setting up some base styles
       ========================================================================== */
 #contact-bg {
-  background-image: url(../images/barbara_blurred_short2.png);
+  background-image: url(../images/barbara_blurred_short2.webp);
   background-size: cover !important;
   background-blend-mode: normal !important;
   background-repeat: no-repeat;
