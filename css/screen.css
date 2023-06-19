@@ -79,7 +79,13 @@
 /* ==========================================================================
       2. General - Setting up some base styles
       ========================================================================== */
-
+#contact-bg {
+  background-image: url(../images/barbara_blurred_short2.png);
+  background-size: cover !important;
+  background-blend-mode: normal !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 html {
   height: 100%;
   max-height: 100%;
@@ -198,9 +204,9 @@ a.btn {
   position: relative;
   margin-top: 2rem;
   cursor: pointer;
-  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   text-transform: uppercase;
-  font-weight: lighter;
+  font-weight: 500;
 }
 
 a.btn:hover {
@@ -251,7 +257,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #3a4145;
   margin: 3.2em 0;
   padding: 0;
 }
@@ -921,6 +927,12 @@ a.fn-item.active {
       ========================================================================== */
 
 @media only screen and (max-width: 1130px) {
+  .line-art {
+    opacity: 0.2;
+    mix-blend-mode: overlay;
+    width: 100% !important;
+    top: 1% !important;
+  }
   .fixed-nav {
     opacity: 1;
     position: fixed;
@@ -941,6 +953,8 @@ a.fn-item.active {
   }
   .post-holder {
     padding-top: 20px;
+    background-size: contain !important;
+    background-blend-mode: overlay;
   }
   #site-head {
     -webkit-box-sizing: border-box;
@@ -1017,8 +1031,8 @@ a.fn-item.active {
 
   .post {
     width: auto;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
     font-size: 0.8em;
     line-height: 1.6em;
   }

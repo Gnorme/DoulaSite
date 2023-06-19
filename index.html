@@ -1,236 +1,558 @@
 <!DOCTYPE html>
-<html><meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<html>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<title>Barbara Hitchko - Montreal Birthing &amp; Postpartum Doula</title>
+  <title>Barbara Hitchko - Montreal Birthing &amp; Postpartum Doula</title>
 
+  <link
+    rel="shortcut icon"
+    href="https://gnorme.github.io/DoulaSite/images/favicon.png"
+    type="image/png"
+  />
 
-  <link rel="shortcut icon" href="https://gnorme.github.io/DoulaSite/images/favicon.png" type="image/png"
-/>
+  <meta
+    name="description"
+    content="Montreal Birthing &amp; Post-partum Doula"
+  />
 
+  <meta
+    name="keywords"
+    content="some, keywords, for, seo, you, know, google, duckduckgo, and, such"
+  />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <meta name="description" content="Montreal Birthing &amp; Post-partum Doula"
-/>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="keywords" content="some, keywords, for, seo, you, know, google, duckduckgo, and, such"
-/>
-<meta name="referrer" content="no-referrer-when-downgrade" />
+  <link rel="stylesheet" href="css/screen.css" />
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+  <link
+    rel="stylesheet"
+    href="fork-awesome/css/fork-awesome.min.css"
+    type="text/css"
+  />
 
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="" />
+  <meta
+    property="og:description"
+    content="Montreal Birthing &amp; Post-partum Doula"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gnorme.github.io/DoulaSite/" /><meta
+    property="og:image"
+    content="https://gnorme.github.io/DoulaSite/images/cover-image.jpg"
+  /><meta
+    property="og:site_name"
+    content="Barbara Hitchko - Montreal Birthing &amp; Postpartum Doula"
+  />
 
-<link rel="stylesheet" href="https://gnorme.github.io/DoulaSite/css/screen.css" />
-<link rel="stylesheet" href="https://gnorme.github.io/DoulaSite/css/fonts.css" type="text/css" />
-<link
-  rel="stylesheet"
-  href="https://gnorme.github.io/DoulaSite/fork-awesome/css/fork-awesome.min.css"
-  type="text/css"
-/>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:image"
+    content="https://gnorme.github.io/DoulaSite/images/cover-image.jpg"
+  />
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Montreal Birthing &amp; Post-partum Doula" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://gnorme.github.io/DoulaSite/" /><meta property="og:image" content="https://gnorme.github.io/DoulaSite/images/cover-image.jpg"/><meta property="og:site_name" content="Barbara Hitchko - Montreal Birthing &amp; Postpartum Doula" />
+  <meta name="twitter:title" content="" />
+  <meta
+    name="twitter:description"
+    content="Montreal Birthing &amp; Post-partum Doula"
+  />
 
+  <meta itemprop="name" content="" />
+  <meta
+    itemprop="description"
+    content="Montreal Birthing &amp; Post-partum Doula"
+  />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://gnorme.github.io/DoulaSite/images/cover-image.jpg"/>
+  <style>
+    .line-art {
+      position: absolute;
+      width: 20%;
+      top: 10%;
+    }
+    .left {
+      left: 0;
+    }
+    p {
+      position: relative;
+      overflow: hidden;
+      transform: translate(0, 0);
+      margin-top: 14px;
+      z-index: 2;
+      transition: all 500ms ease;
+    }
+    p {
+      transition: all 0.25s ease-in-out;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      padding-bottom: 4px;
+      padding-top: 18px;
+      border-top: 1px dotted #dce7eb;
+    }
+    ul li input[type="checkbox"] {
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+    }
+    ul li input[type="checkbox"]:checked ~ p {
+      margin-top: 0;
+      max-height: 0;
+      opacity: 0;
+      transform: translate(0, 50%);
+    }
+    ul li input[type="checkbox"]:checked ~ i:before {
+      margin-top: 9px;
+      height: 9px;
+      transform: translate(2px, 0) rotate(45deg);
+    }
+    ul li input[type="checkbox"]:checked ~ i:after {
+      margin-top: 9px;
+      height: 9px;
+      transform: translate(-2px, 0) rotate(-45deg);
+    }
+    ul li:nth-of-type(1) {
+      border-top: none;
+    }
+    ul li:last-of-type {
+      padding-bottom: 0;
+    }
 
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Montreal Birthing &amp; Post-partum Doula"/>
+    @-webkit-keyframes bounceInUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+      }
+      60% {
+        opacity: 1;
+        -webkit-transform: translateY(-30px);
+      }
+      80% {
+        -webkit-transform: translateY(10px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+      }
+    }
+    @keyframes bounceInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(2000px);
+      }
+      60% {
+        opacity: 1;
+        transform: translateY(-30px);
+      }
+      80% {
+        transform: translateY(10px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
 
-<meta itemprop="name" content="">
-<meta itemprop="description" content="Montreal Birthing &amp; Post-partum Doula">
+    a:hover {
+      color: #b6b84c;
+    }
 
+    a.btn {
+      color: white;
+      background-color: #7eae34;
+    }
+    a.btn:hover {
+      background-color: #b6b84c;
+    }
 
+    a.fn-item.active {
+      color: #b6b84c;
+    }
+    a.fn-item:hover {
+      color: #ced067;
+    }
 
+    .post-holder.odd {
+      background: #fcbfd3;
+      color: #3a4145;
+    }
+    .post-holder {
+      background: rgb(237 220 242);
+    }
+    body {
+      color: #3a4145;
+    }
 
+    .site-footer {
+      color: #bbc7cc;
+      background-color: #22343a;
+    }
+    .last {
+      color: white;
+    }
+  </style>
 
-<style>
-      
-     a:hover {
-         color: #b6b84c;
-     }
-
-      
-     a.btn {
-         color: white;
-          background-color: #7eae34;
-     }
-     a.btn:hover {
-          background-color: #b6b84c;
-     }
-
-      
-     a.fn-item.active {
-          color: #b6b84c;
-     }
-     a.fn-item:hover {
-          color: #ced067;
-     }
-
-      
-     .post-holder.odd {
-          background: #c0436d;
-          color: white;
-     }
-     .post-holder {
-          background: #f2efe8;
-     }
-     body {
-          color: #3A4145;
-     }
-
-      
-     .site-footer {
-          color: #BBC7CC;
-          background-color: #22343A;
-     }
-</style>
-
-
-
-
-
-
-
-
-
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="https://gnorme.github.io/DoulaSite/images/apple-touch-icon.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="https://gnorme.github.io/DoulaSite/images/favicon-32x32.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="16x16"
-  href="https://gnorme.github.io/DoulaSite/images/favicon-16x16.png"
-/>
-<body>
-
-
-
-<header id="site-head" style="background-image: url(images/cover-image.jpg)">
-    <div class="vertical">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="https://gnorme.github.io/DoulaSite/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://gnorme.github.io/DoulaSite/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://gnorme.github.io/DoulaSite/images/favicon-16x16.png"
+  />
+  <body>
+    <header
+      id="site-head"
+      style="background-image: url(images/cover-image.jpg)"
+    >
+      <div class="vertical">
         <div id="site-head-content" class="inner">
+          <h1 class="blog-title">Barbara Hitchko</h1>
+          <h2 class="blog-description">
+            Supporting your transition to parenthood with compassionate,
+            unbiased care and education
+          </h2>
 
-            <h1 class="blog-title">Barbara Hitchko</h1>
-            <h2 class="blog-description">Supporting your transition to parenthood with compassionate, unbiased care and education</h2>
+          <a class="btn site-menu" data-title-anchor="services">Services</a>
 
-            
-                 <a class='btn site-menu' data-title-anchor='services'>Services</a>
-            
-                 <a class='btn site-menu' data-title-anchor='about-me'>About Me</a>
-            
-                 <a class='btn site-menu' data-title-anchor='contact'>Contact</a>
-            
-            <i id='header-arrow' class="fa fa-angle-down"></i>
+          <a class="btn site-menu" data-title-anchor="about-me"
+            >About Barbara</a
+          >
+
+          <a class="btn site-menu" data-title-anchor="contact">Contact</a>
+
+          <i id="header-arrow" class="fa fa-angle-down"></i>
         </div>
-    </div>
-</header>
-<main class="content" role="main">
+      </div>
+    </header>
+    <main class="content" role="main">
+      <div class="fixed-nav"></div>
+      <div
+        class="post-holder"
+        style="
+          padding: 30px 0;
+          background-size: 30%;
+          background-repeat: no-repeat;
+          background-position: right;
+          background-image: url(images/mom-baby-line.svg);
+        "
+      >
+        <article id="welcome" class="post first">
+          <header class="post-header">
+            <h2 class="post-title">Welcome</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              As a doula and childbirth educator, it brings me immense joy to
+              provide support to pregnant individuals and their families in the
+              Montreal area, guiding them through the transformative journey
+              from pregnancy to parenthood. Since 2015, I have had the privilege
+              of working with numerous families in Montreal and Ontario serving
+              as their Birth and Postpartum Doula. With extensive experience and
+              a wide range of practical skills in pregnancy and childbirth, I
+              approach each role with wisdom, passion, and mindfulness.
+            </p>
+            <!--<p>
+              Throughout my career, I have had the opportunity to attend over
+              100 births as a doula, collaborating with various healthcare
+              professionals in different settings. I am dedicated to supporting
+              your choices and adapting to the specific needs of your birth,
+              serving as a respectful and integral member of your team.
+            </p>-->
+            <p>
+              My role is to accompany you along the way providing loving
+              guidance, gentle suggestions, and my firm belief in a woman’s
+              capacity to access her inner strength and resources.
+            </p>
+            <h6 style="text-align: center">
+              Each birth story is unique, and as your doula I will help you to
+              navigate yours
+            </h6>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-    <div class='fixed-nav'>
-    </div>
-    
-        <div class='post-holder'>
-            <article id='welcome' class='post first '>
-                <header class="post-header">
-                    <h2 class="post-title">Welcome</h2>
-                </header>
-                <section class="post-content">
-                    <p>Hi there. This section will not show up in the header menu above. Other than that, there&rsquo;s really not much to see here. I did however append some generated »Lorem ipsum«-paragraphs for you. Enjoy!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula turpis nec arcu cursus, ac faucibus felis tempor. Donec molestie arcu eu pretium accumsan. Phasellus urna nisi, volutpat pharetra orci vel, feugiat sollicitudin diam. Phasellus dolor tortor, feugiat a ipsum id, gravida volutpat urna. Nam dictum nulla ac nisi aliquam ultricies. Nam tempus eget lorem vitae vulputate.</p>
-<p>Nulla aliquet, nisl pulvinar fermentum ultricies, turpis purus ultricies lorem, ut faucibus arcu nisl in tellus. Integer eu augue auctor, fringilla nunc ut, finibus eros. Curabitur est lectus, ultricies id blandit at, malesuada et ipsum. Suspendisse potenti. Quisque euismod sapien arcu, vel sollicitudin ipsum dignissim nec.</p>
+      <div class="post-holder">
+        <img
+          src="images/pregnant-woman-sideways.svg"
+          style="position: absolute; left: 0"
+          class="line-art left"
+        />
+        <article id="services" class="post">
+          <header class="post-header">
+            <h2 class="post-title">Services</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              Doula services provide continuous emotional, physical, and
+              informational support throughout pregnancy, labor, and postpartum.
+              Doulas advocate for the birthing person's preferences, offer
+              comfort measures during labor, provide evidence-based information,
+              and assist with postpartum care, which includes but is not limited
+              to, sibling care, breastfeeding support, nutrition and anything
+              the parents need to feel comfortable and confident. As your doula,
+              I am here to be your personal resource throughout your pregnancy
+              and the initial weeks postpartum.
+            </p>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='services' class='post  '>
-                <header class="post-header">
-                    <h2 class="post-title">Services</h2>
-                </header>
-                <section class="post-content">
-                    <p>That is the important part, right? You want to know what I can do for you. This is why I put this right up there into the header menu of the website.</p>
-<hr>
-<h2 id="birth-doula-support">Birth Doula Support</h2>
-<p>Brief description of services provided as well as a quote from a previous client</p>
-<p><img src="images/pregnant.jpg" alt="Nice picture to make you pay me ;-)"></p>
-<p>Wow. That was nice, right? Well, call me and let us talk.</p>
-<hr>
-<h2 id="postpartum-support">Postpartum Support</h2>
-<p>What if you felt nourished, supported, and  listened to while you navigated the early days with your new baby?</p>
-<p>Brief description of care provided.</p>
-<p><img src="images/baby-feet.jpg" alt="Let us get started on a clean slate"></p>
-<hr>
-<p>Want to learn more about my services?</p>
-<p>Check out <a href="services">this page</a> for a lot more details.</p>
+            <hr />
+            <h2 id="birth-doula-support">Birth Doula Support</h2>
+            <p>
+              With a birth doula by your side, you can expect compassionate
+              care, personalized attention, and a trusted ally dedicated to
+              helping you feel confident and achieve a positive and memorable
+              birth.
+            </p>
+            <div class="wrapper">
+              <ul>
+                <li>
+                  <input type="checkbox" checked />
+                  <a
+                    style="
+                      text-decoration: underline;
+                      display: block;
+                      text-align: end;
+                    "
+                    >Learn more</a
+                  >
+                  <p>
+                    Once you have chosen to hire me as your doula, I find it
+                    important to meet with you in the comfort of your own home
+                    for two sessions, each lasting approximately two hours.
+                    During these visits, we will take the time to get to know
+                    each other better, discuss important information, and
+                    explore various options to help you prepare for labour and
+                    the arrival of your baby. We will also practice relaxation
+                    techniques, comfort measures, and different labour
+                    positions. I strongly encourage the involvement of your
+                    partner or anyone else who will be present during your
+                    birth.
+                  </p>
+                  <p>
+                    Starting from the 37th week of your pregnancy, I consider
+                    myself on call 24/7 to support you during your birth. My
+                    objective is to help you feel relaxed and confident
+                    throughout the process, so it is important for us to stay in
+                    touch regularly during this stage. Once you feel the need
+                    for additional labor support, I will join you and remain by
+                    your side until your baby is born and you are settled.
+                    Typically, I stay for 1-3 hours after the birth. During this
+                    time, I provide both physical and emotional care and
+                    support. I also ensure that your partner feels included by
+                    offering suggestions and encouraging their participation
+                    according to their comfort level. After the birth, my doula
+                    services include immediate breastfeeding support and
+                    assisting you and your family in settling in and preparing
+                    for rest.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!--<p>
+              Once you feel the need for additional labor support, I will join
+              you and remain by your side until your baby is born and you are
+              settled. Typically, I stay for 1-3 hours after the birth. During
+              this time, I provide both physical and emotional care and support.
+              I also ensure that your partner feels included by offering
+              suggestions and encouraging their participation according to their
+              comfort level. After the birth, my doula services include
+              immediate breastfeeding support and assisting you and your family
+              in settling in and preparing for rest.
+            </p>-->
+            <p>
+              <img src="images/pregnant.jpg" alt="Nice picture" />
+            </p>
+            <hr />
+            <h2 id="postpartum-support">Postpartum Support</h2>
+            <p>
+              During postpartum visits, I provide essential support and care to
+              new parents during the transformative post-birth period. From
+              practical assistance to emotional support, I will help you
+              navigate the challenges of early parenthood.
+            </p>
+            <div class="wrapper">
+              <ul>
+                <li>
+                  <input type="checkbox" checked />
+                  <a
+                    style="
+                      text-decoration: underline;
+                      display: block;
+                      text-align: end;
+                    "
+                    >Learn more</a
+                  >
+                  <p>
+                    Over the course of 1 - 2 postpartum visits I will help
+                    ensure that breastfeeding is going smoothly and that your
+                    recovery is progressing well. I am available to answer any
+                    questions you may have about being a new parent and can
+                    connect you with local resources within your community.
+                    These visits also allow us to reflect on our experience
+                    together and look forward to future updates on your
+                    progress. I am here as a resource for you throughout your
+                    parenting and breastfeeding journey.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <p>
+              <img
+                src="images/baby-feet.jpg"
+                alt="Let us get started on a clean slate"
+              />
+            </p>
+            <hr />
+            <div
+              style="
+                text-align: center;
+                padding: 20px 10px;
+                background-color: white;
+                text-align: center;
+                box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <h2 style="font-weight: 400; font-family: 'Open Sans Condensed'">
+                Set up an appointment
+              </h2>
+              <a
+                href="./contact.html"
+                style="
+                  text-decoration: none;
+                  border: 2px solid #fcbfd3;
+                  padding: 12px 40px 12px 24px;
+                  cursor: pointer;
+                  color: #e15a87;
+                  margin-top: 10px;
+                  position: relative;
+                  display: inline-block;
+                  border-radius: 5px;
+                "
+                >Free Consultation
+                <img
+                  src="./images/nav-arrow-right.svg"
+                  style="
+                    float: right;
+                    height: 20px;
+                    position: absolute;
+                    right: 15px;
+                    transform: translate(0, -50%);
+                    top: 50%;
+                  "
+              /></a>
+            </div>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='about-me' class='post  '>
-                <header class="post-header">
-                    <h2 class="post-title">About Me</h2>
-                </header>
-                <section class="post-content">
-                    <p><img src="images/happy-ethnic-woman-sitting-at-table-with-laptop-3769021.jpg" alt="Jane Doe"></p>
-<h5 id="professionel-experience">Professionel Experience</h5>
-<p>A lot, but let us get into the details with some lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat lectus et magna placerat tincidunt. Nullam sit amet lectus vitae elit mollis rhoncus non eget lorem. Ut tempor sed dui quis volutpat.</p>
-<p>In ultrices, est at lobortis pretium, magna quam mollis neque, id viverra odio est sit amet lorem. Mauris efficitur nunc vel lectus porttitor, sit amet sodales quam eleifend. Duis et felis ut mauris dignissim efficitur. Aliquam non sem eros. Integer elit ante, bibendum id hendrerit vitae, vestibulum eget risus. Nunc efficitur nisl in iaculis vestibulum.</p>
+      <div class="post-holder">
+        <article id="about-me" class="post">
+          <header class="post-header">
+            <h2 class="post-title" style="text-align: center">Meet Barbara</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              <img
+                src="images/barbara2.jpg"
+                style="max-height: 400px"
+                alt="Jane Doe"
+              />
+            </p>
+            <p>
+              Barbara is an experienced and dedicated doula with nine years of
+              experience, who brings a compassionate approach to supporting
+              families through the transformative journey of pregnancy and
+              parenthood.
+            </p>
+            <p>
+              With four children of her own, Barbara intimately understands the
+              joys and challenges that come with welcoming a new life into the
+              world. Her personal experiences have ignited a deep passion and
+              empathy within her, driving her commitment to empower and guide
+              others on their unique birth journeys.
+            </p>
+            <p>
+              Through years of assisting families in various settings, Barbara
+              has developed a wealth of practical knowledge and honed her
+              skills. She continuously seeks to expand her expertise through
+              ongoing learning and professional development, ensuring that she
+              provides the highest standard of care to her clients.
+            </p>
+            <p>
+              Barbaras compassionate nature shines through in her approach to
+              each client. She believes in fostering meaningful connections and
+              building trust, offering unwavering support tailored to the
+              individual choices and desires of the families she serves. With
+              her calming presence and reassuring words, Barbara creates a
+              nurturing environment, allowing her clients to feel safe,
+              supported, and empowered throughout their birth experience.
+            </p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='contact' class='post  last'>
-                <header class="post-header">
-                    <h2 class="post-title">Contact</h2>
-                </header>
-                <section class="post-content">
-                    <p><i class="fa fa-envelope"></i> <a href="mailto:your-email@your-domain.com">mail@janedoe.com</a></p>
-<p><i class="fa fa-phone"></i> <a href="tel:+15142403408">+1 514 240 3408</a></p>
-<p>Let us get in touch!</p>
+      <div class="post-holder" id="contact-bg">
+        <article id="contact" class="post last">
+          <header class="post-header">
+            <h2 class="post-title">Contact</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              <i class="fa fa-envelope"></i> <a
+                href="mailto:your-email@your-domain.com"
+                >mail@janedoe.com</a
+              >
+            </p>
+            <p>
+              <i class="fa fa-phone"></i> <a href="tel:+15142403408"
+                >+1 514 240 3408</a
+              >
+            </p>
+            <p>Let us get in touch!</p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="inner">
+        <section class="copyright">© Barbara Hitchko</section>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-</main>
-<footer class="site-footer">
-  <div class="inner">
-    
-      <section class="copyright">© Barbara Hitchko</section>
+        <section></section>
+      </div>
+    </footer>
 
+    <script
+      type="text/javascript"
+      src="https://gnorme.github.io/DoulaSite/js/jquery-1.11.3.min.js"
+    ></script>
 
-    <section></section>
-    
-
-  </div>
-</footer>
-
-    <script type="text/javascript" src='https://gnorme.github.io/DoulaSite/js/jquery-1.11.3.min.js'></script>
-
-    
-    <script type="text/javascript" src='https://gnorme.github.io/DoulaSite/js/icons.js'></script>
-    <script type="text/javascript" src='https://gnorme.github.io/DoulaSite/js/index.js'></script>
-    
-</body>
+    <script
+      type="text/javascript"
+      src="https://gnorme.github.io/DoulaSite/js/icons.js"
+    ></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
 </html>

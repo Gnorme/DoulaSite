@@ -81,10 +81,13 @@ var $sitehead = $("#site-head");
         }
 
         $post.each(function () {
-          if (($(window).height() + w) > ($(document).height() - $(".site-footer").height())) {
+          if (
+            $(window).height() + w >
+            $(document).height() - $(".site-footer").height()
+          ) {
             var l = $postholder.length;
-            $(".fn-item[item_index='" + (l - 1) + "']").removeClass("active")
-            $(".fn-item[item_index='" + (l) + "']").addClass("active")
+            $(".fn-item[item_index='" + (l - 1) + "']").removeClass("active");
+            $(".fn-item[item_index='" + l + "']").addClass("active");
           } else {
             var f = $(this).offset().top;
             var b = $(this).offset().top + $(this).height();
@@ -104,14 +107,10 @@ var $sitehead = $("#site-head");
               i.removeClass("active");
               a.fadeIn("slow");
             }
-        }
+          }
         });
       });
     }
-
-    $("ul li").before('<span class="bult fa fa-asterisk"></span>');
-    $("blockquote p").prepend('<span class="quo fa fa-quote-left"></span>');
-    $("blockquote p").append('<span class="quo fa fa-quote-right"></span>');
   });
 
   $post.each(function () {
