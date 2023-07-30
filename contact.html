@@ -160,11 +160,23 @@
     </div>
     <form id="contact-form" netlify>
       <label for="name">YOUR NAME</label>
-      <input type="text" placeholder="Please enter your name" name="name" />
+      <input
+        type="text"
+        placeholder="Please enter your name"
+        name="name"
+        required
+      />
       <label for="email">EMAIL ADDRESS</label>
-      <input type="text" placeholder="Your email" name="email" />
+      <input type="text" placeholder="Your email" name="email" required />
       <label for="phone-number">PHONE NUMBER</label>
-      <input type="tel" placeholder="(•••) •••-••••" name="phone-number" />
+      <input
+        type="tel"
+        placeholder="(•••) •••-••••"
+        name="phone-number"
+        minlength="10"
+        maxlength="14"
+        required
+      />
       <label for="topic">TOPIC</label>
       <select name="topic">
         <option>General Question</option>
@@ -172,7 +184,7 @@
         <option>Post-Partum</option>
       </select>
       <label>DETAILS</label>
-      <textarea placeholder="Hi Barbara..." name=""></textarea>
+      <textarea placeholder="Hi Barbara..." name="" required></textarea>
       <button type="submit">Send</button>
     </form>
   </div>
